@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency.css">
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <select  id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="YEN">YEN</option>
+            </select>
+            <select  id="toCurrency">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="YEN">YEN</option>
+
+            </select>
+            <button onclick="convert()">convert</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    
+    <script src="currency.js"></script>
+</body>
+</html>
